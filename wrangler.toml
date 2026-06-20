@@ -2,10 +2,9 @@ name = "bus-worker"
 main = "index.js"
 compatibility_date = "2024-06-20"
 
-[[durable_objects]]
-bindings = [
-  { name = "BUS_HUB", class_name = "BusHub" }
-]
+[[durable_objects.bindings]]
+name = "BUS_HUB"
+class_name = "BusHub"
 
 [[migrations]]
 tag = "v1"
